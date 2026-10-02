@@ -15,5 +15,9 @@ app.use((err, req, res, next) => {
   res.status(status).json({ message: status === 500 ? 'Something went wrong on the server' : err.message, warnings: err.warnings });
 });
 mongoose.connect(process.env.MONGO_URI)
-  .then(() => app.listen(process.env.PORT || 5000, () => console.log('SmartBus API running')))
-  .catch((e) => { console.error('MongoDB connection failed:', e.message); process.exit(1); });
+  .then(() => app.listen(5002, () => console.log('SmartBus API running on port 5002')))
+  .catch((e) => {
+    console.error('MongoDB connection failed:', e.message);
+    process.exit(1);
+  });
+

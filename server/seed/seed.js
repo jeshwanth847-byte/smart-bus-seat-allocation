@@ -36,6 +36,10 @@ const buses = await Bus.create([
   { ...base, busNumber: 'TS09 EF 3003', busName: 'Nizam Voyager', busType: 'AC Sleeper', source: 'Hyderabad', destination: 'Bengaluru', departureTime: '21:00', arrivalTime: '06:00', duration: '9h', price: 1100, amenities: ['WiFi', 'Blanket', 'Charging', 'Water'] },
   { ...base, busNumber: 'TS09 GH 4004', busName: 'Venkateswara Link', busType: 'Electric Bus', source: 'Hyderabad', destination: 'Tirupati', departureTime: '20:00', arrivalTime: '05:30', duration: '9h 30m', price: 900, amenities: ['Charging', 'Eco-friendly'] },
   { ...base, busNumber: 'TS09 IJ 5005', busName: 'Vizag Rider', busType: 'AC Seater', source: 'Hyderabad', destination: 'Visakhapatnam', departureTime: '19:00', arrivalTime: '07:00', duration: '12h', price: 1300, amenities: ['WiFi', 'Charging', 'Water'] },
+  { ...base, busNumber: 'TS09 KL 6006', busName: 'Bay of Bengal Star', busType: 'AC Sleeper', source: 'Hyderabad', destination: 'Chennai', departureTime: '22:15', arrivalTime: '08:15', duration: '10h', price: 1250, amenities: ['WiFi', 'Blanket', 'Charging'] },
+  { ...base, busNumber: 'TS09 MN 7007', busName: 'Cochin Horizon', busType: 'Sleeper', source: 'Hyderabad', destination: 'Kochi', departureTime: '20:30', arrivalTime: '09:30', duration: '13h', price: 1450, amenities: ['WiFi', 'Charging', 'Water', 'Blanket'] },
+  { ...base, busNumber: 'TS09 OP 8008', busName: 'Nilgiri Ride', busType: 'AC Seater', source: 'Hyderabad', destination: 'Coimbatore', departureTime: '18:45', arrivalTime: '06:45', duration: '12h', price: 1100, amenities: ['WiFi', 'Charging', 'Water'] },
+  { ...base, busNumber: 'TS09 QR 9009', busName: 'Golden Coast Express', busType: 'AC Sleeper', source: 'Hyderabad', destination: 'Goa', departureTime: '18:00', arrivalTime: '07:00', duration: '13h', price: 1500, amenities: ['WiFi', 'Blanket', 'Charging', 'Water'] },
 ]);
 
 const asP = (x) => ({ name: x.name, age: x.age, passengerType: x.passengerType, accessibility: x.accessibilityRequirement, seatPreference: x.seatPreference });

@@ -204,7 +204,7 @@ export default function Home() {
           >
             All Buses ({allDemoBuses.length})
           </button>
-          {['Vijayawada', 'Bengaluru', 'Warangal', 'Tirupati', 'Visakhapatnam'].map((dest) => (
+          {['Vijayawada', 'Bengaluru', 'Warangal', 'Tirupati', 'Visakhapatnam', 'Chennai', 'Coimbatore', 'Kochi', 'Goa'].map((dest) => (
             <button
               key={dest}
               onClick={() => handleRouteFilter(dest)}
