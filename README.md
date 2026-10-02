@@ -11,7 +11,7 @@ cd client && npm install && npm run dev                                         
 Seed logins (password `Password@123`): `admin@smartbus.com`, `operator@smartbus.com`, `passenger1@example.com`
 
 ## Test
-1. Open http://localhost:5173/demo and click **Run Smart Allocation Demo**.
+1. Open http://localhost:5174/demo and click **Run Smart Allocation Demo**.
 2. Log in as a passenger, search Hyderabad → Vijayawada, book with Smart and Manual mode.
 3. Manual-select a non-accessible seat for a wheelchair passenger: a warning appears.
 4. Try booking the same seat from two sessions: the unique `SeatLock` index blocks the second.
